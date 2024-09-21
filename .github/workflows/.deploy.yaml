@@ -10,7 +10,7 @@ jobs:
             - name: checkout the repo
               uses: actions/checkout@v4
             - name: setup node version
-              uses: actions/node-setup@v4
+              uses: actions/setup-node@v4
               with:
                 node-version: '20.x'
             - name: Install dependencies
@@ -35,7 +35,7 @@ jobs:
             with:
               name: artifact
               path: build
-              
+
 
         
 
